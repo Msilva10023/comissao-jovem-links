@@ -18,33 +18,29 @@
     .button {
       position: absolute;
       width: 180px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     .whatsapp {
-      top: 250px; /* ajuste conforme necessário */
-      left: 50%;
-      transform: translateX(-50%);
+      top: 330px; /* aumentei o top para descer abaixo da logo */
     }
 
     .eventos {
-      top: 350px; /* ajuste conforme necessário */
-      left: 50%;
-      transform: translateX(-50%);
+      top: 430px;
     }
 
     .formulario {
-      top: 450px; /* ajuste conforme necessário */
-      left: 50%;
-      transform: translateX(-50%);
+      top: 530px;
     }
 
     @media(max-width: 500px){
       .button {
-        width: 140px;
+        width: 150px;
       }
-      .whatsapp { top: 200px; }
-      .eventos { top: 280px; }
-      .formulario { top: 360px; }
+      .whatsapp { top: 280px; }
+      .eventos { top: 360px; }
+      .formulario { top: 440px; }
     }
   </style>
 </head>
