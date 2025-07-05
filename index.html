@@ -11,43 +11,54 @@
       background: url('fundo.jpg') no-repeat center top;
       background-size: cover;
       font-family: sans-serif;
-      text-align: center;
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      margin-top: 200px; /* Ajuste a altura inicial conforme o design */
+      height: 100vh;
+      overflow-x: hidden;
     }
 
     .button {
-      width: 200px;
+      position: absolute;
+      width: 180px;
     }
 
-    .button img {
-      width: 100%;
+    .whatsapp {
+      top: 250px; /* ajuste conforme necessário */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .eventos {
+      top: 350px; /* ajuste conforme necessário */
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .formulario {
+      top: 450px; /* ajuste conforme necessário */
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     @media(max-width: 500px){
       .button {
-        width: 150px;
+        width: 140px;
       }
+      .whatsapp { top: 200px; }
+      .eventos { top: 280px; }
+      .formulario { top: 360px; }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <a href="https://wa.me/seu-numero" class="button">
-      <img src="whatsapp.png" alt="WhatsApp">
-    </a>
-    <a href="https://seusite.com/eventos" class="button">
-      <img src="eventos.png" alt="Eventos">
-    </a>
-    <a href="https://seusite.com/formulario" class="button">
-      <img src="formulario.png" alt="Formulário">
-    </a>
-  </div>
+  <a href="https://wa.me/seu-numero" class="button whatsapp">
+    <img src="whatsapp.png" alt="WhatsApp" width="100%">
+  </a>
+
+  <a href="https://seusite.com/eventos" class="button eventos">
+    <img src="eventos.png" alt="Eventos" width="100%">
+  </a>
+
+  <a href="https://seusite.com/formulario" class="button formulario">
+    <img src="formulario.png" alt="Formulário" width="100%">
+  </a>
 </body>
 </html>
